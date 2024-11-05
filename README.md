@@ -1,18 +1,10 @@
 <h1>Double Pendulum Simulation
 
-
- ### [YouTube Demonstration (@16:20)](https://youtu.be/RoZeVbbZ0o0?t=980)
-
-
 <h2>Description</h2>
-<b>This is a project completed using C programming. It is a simulation of the path of a double pendulum. The program prompts the user for the length of rod1 and rod2 as well as the "mass" of mass1 and mass2. The motion is not entirely accurate in relation to how it would physically move in real life, it does display how the velocity and motion changes based on different masses but with respect to a gravitational constant of 1 in arbitrary units. This program is made only to display the chaotic path of motion of a double pendulum in the real world.
+<b>This projects uses C Programming to simulate the motion of a double pendulum. A double pendulum is 2 rods with lengths L1 and L2 for rod1 and rod2 respectively. At the end of rod one is a mass M1 and rod 2. At the end of rod 2 there is just mass M2. The equations for motion of this system were obtained using the Euler-Lagrange equation. The units for Mass, Length and Gravity in this simulation are arbitrary. For Mass and Length the values are simply ratios M1:M2 and L1:L2.
 </b>
 <br />
-<br />
-
-<h2>Compilition command for the Program</h2>
-<p align="center">
-<img src="https://i.imgur.com/3d3CEwZ.png" height="85%" width="85%" alt="RDP event fail logs to iP Geographic information"/>
+ 
 </p>
 <h2>Languages Used</h2>
 
@@ -22,17 +14,38 @@
 
 - <b>stdio.h</b>
 - <b>stdlib.h</b>
-- <b>math.h></b>
+- <b>math.h</b>
 - <b>SDL2/SDL.h</b>
 
-<h2>Attacks from China coming in; Custom logs being output with geodata</h2>
-
+<h2>Compilition command for the Program</h2>
 <p align="center">
-<img src="https://i.imgur.com/LhDCRz4.jpeg" height="85%" width="85%" alt="Image Analysis Dataflow"/>
-</p>
+<img src="https://i.imgur.com/u3CHjrA.png" height="85%" width="85%" alt="RDP event fail logs to iP Geographic information"/>
 
-<h2>World map of incoming attacks after 24 hours (built custom logs including geodata)</h2>
+<h2>Example 1:</h2>
 
-<p align="center">
-<img src="https://i.imgur.com/krRFrK5.png" height="85%" width="85%" alt="Image Analysis Dataflow"/>
-</p>
+- <b> M1:M2 = 1:1
+- <b> L1:L2 = 1:1
+- <b> Rod 1 Initial = 1*pi radians
+- <b> Rod 2 Initial = 1*pi radians
+
+<table>
+<tr>
+    <td><img src="https://i.imgur.com/cURaejj.png" alt="Image 1" width="600" height="400"/></td>
+    <td><img src="https://i.imgur.com/BECel9P.png" alt="Image 2" width="400" height="400"/></td>
+</tr>
+</table>
+
+
+<h2>Example 2:</h2>
+
+- <b> M1:M2 = 1:1
+- <b> L1:L2 = 1:2
+- <b> Rod 1 Initial = pi/4 radians
+- <b> Rod 2 Initial = pi/4 radians
+
+<table>
+<tr>
+    <td><img src="https://i.imgur.com/7MpuDFZ.png" alt="Image 1" width="600" height="400"/></td>
+    <td><img src="https://i.imgur.com/2hiE0zb.png" alt="Image 2" width="400" height="400"/></td>
+</tr>
+</table>
